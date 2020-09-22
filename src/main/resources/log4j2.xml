@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug" strict="true" name="XMLConfig">
+	<Properties>
+		<Property name="filename">target/test.log</Property>
+	</Properties>
+	<Appenders>
+		<Appender type="Console" name="STDOUT">
+			<Layout type="PatternLayout">
+				<Pattern>%highlight{* %-5level %class{36} %L %M - %msg%xEx%n *}{FATAL=white, ERROR=red, WARN=blue, INFO=black, DEBUG=green, TRACE=blue}</Pattern>
+			</Layout>
+			<MarkerFilter marker="SCENE_GRID_CONTRUCTION" onMatch="DENY" onMismatch="ACCEPT" />
+		</Appender>
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="STDOUT" />
+		</Root>
+	</Loggers>
+
+</Configuration>

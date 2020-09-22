@@ -1,0 +1,55 @@
+#header, #body {
+	-fx-background-color: rgba(1, 1, 1, 1);
+}
+
+#header-title {
+	-fx-text-fill: #fafafa;
+	-fx-font-size: 18px;
+}
+
+.header-separator {
+	-fx-background-color: #d3d7cf;
+	-fx-background-radius: 4px;
+}
+
+.label.section {
+	-fx-text-fill: #e0e0e0;
+	-fx-font-size: 16px;
+}
+
+.label {
+	-fx-text-fill: #bdbdbd;
+	-fx-font-size: 13px;
+}
+
+.show-stroke:selected .stroke-selected-graphic {
+	-fx-icon-color: #d789d7;
+}
+
+.show-stroke:indeterminate .stroke-selected-graphic {
+	-fx-icon-color: lightgray;
+}
+
+.show-bounds-in-local:selected .bounds-in-local-selected-graphic {
+	-fx-icon-color: rgb(40, 223, 153);
+}
+
+.show-bounds-in-local:indeterminate .bounds-in-local-selected-graphic {
+	-fx-icon-color: lightgray;
+}
+
+.show-bounds-in-parent:selected .bounds-in-parent-selected-graphic {
+	-fx-icon-color: rgb(255, 75, 92);
+}
+
+.show-bounds-in-parent:indeterminate .bounds-in-parent-selected-graphic {
+	-fx-icon-color: lightgray;
+}
+
+.show-layout-bounds:selected .layout-bounds-selected-graphic {
+	-fx-icon-color: rgb(253, 219, 58);
+}
+
+.show-layout-bounds:indeterminate .layout-bounds-selected-graphic {
+	-fx-icon-color: lightgray;
+}

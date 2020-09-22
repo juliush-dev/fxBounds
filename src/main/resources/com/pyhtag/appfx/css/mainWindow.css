@@ -1,0 +1,89 @@
+* {
+	-fx-font-family: 'Skyer';
+	-fx-font-style: normal;
+}
+
+.root {
+	-fx-background-color: #000000;
+}
+
+.main-layer {
+	-fx-background-color: #26282b;
+}
+
+.check-box {
+	-fx-text-fill: #bdbdbd;
+	-fx-font-size: 13px;
+}
+
+.box {
+	-fx-background-color: rgba(34, 150, 243, 0.3);
+	-fx-border-color: rgba(34, 150, 243, 0.5);
+	-fx-border-radius: 0;
+	-fx-border-width: 1px;
+	-fx-position-shape: true;
+}
+
+.check-box:selected .mark {
+	-fx-background-color: rgb(34, 150, 243);
+}
+
+.track {
+	-fx-background-color: rgba(34, 150, 243, 0.3);
+	-fx-border-color: rgb(34, 150, 243, 0.5);
+	-fx-border-radius: 0;
+	-fx-border-width: 1px;
+	-fx-padding: 2px;
+	-fx-pref-height: 6px;
+}
+
+.thumb {
+	-fx-background-color: rgba(34, 150, 243, 0.2);
+	-fx-border-color: rgba(34, 150, 243, 0.5);
+	-fx-border-width: 1px;
+	-fx-border-radius: 50%;
+}
+
+.split-pane-divider {
+	-fx-background-color: rgba(0, 0, 0, 0);
+	-fx-border-width: 0px;
+	-fx-max-width: 0px;
+	-fx-min-width: 0px;
+	-fx-padding: 0px;
+}
+.split-pane-divider .horizontal-grabber{
+	-fx-background-color: rgba(0, 0, 0, 0);
+	-fx-border-width: 0px;
+	-fx-max-width: 0px;
+	-fx-min-width: 0px;
+	-fx-padding: 0px;
+}
+
+.group-parent {
+	-fx-border-color: black;
+	-fx-border-width: 1px;
+}
+
+/* Style for bounding rectangles of shape group */
+.group-shape {
+	-fx-fill: rgba(57, 59, 68, 0.8);
+	-fx-stroke: #d789d7;
+	-fx-stroke-width: 1;
+}
+
+.bounds-in-local-stroke-context, .bounds-in-parent-stroke-context, .layout-bounds-stroke-context {
+	-fx-fill: rgba(0, 0, 0, 0);
+	-fx-stroke-width: 1px;
+}
+
+.bounds-in-local-stroke-context {
+	-fx-stroke: rgb(40, 223, 153);
+}
+
+.bounds-in-parent-stroke-context {
+	-fx-stroke: rgb(255, 75, 92);
+}
+
+.layout-bounds-stroke-context {
+	-fx-stroke: rgb(253, 219, 58);
+}

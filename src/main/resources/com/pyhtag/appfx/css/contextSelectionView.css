@@ -1,0 +1,106 @@
+.root {
+	-fx-background-color: rgba(0, 0, 0, 0.5);
+	-fx-background-insets: 1px;
+	-fx-background-radius: 4px;
+	-fx-alignment: center;
+	-fx-padding: 5px;
+}
+
+.layer-1 {
+	-fx-spacing: 4px;
+}
+
+.context-menu {
+	-fx-spacing: 15;
+	-fx-alignment: center-left;
+	-fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.button-remove, .button-more {
+	-fx-text-fill: rgba(194, 194, 194, 0.74);
+	-fx-padding: 3px;
+	-fx-content-display: left;
+	-fx-graphic-text-gap: 5px;
+}
+
+.menu-item-delete, .menu-item-more {
+	-fx-padding: -2px;
+}
+
+.item-selector {
+	-fx-arc-width: 4px;
+	-fx-arc-height: 4px;
+}
+
+.accordion {
+	-fx-padding: 3px 0px 0px 0px;
+}
+
+.first-titled-pane:expanded .title {
+	-fx-background-color: rgba(0, 0, 0, 0);
+	-fx-border-color: #d3d7cf;
+	-fx-border-width: 1px 0px 0px 0px;
+	-fx-text-fill: white;
+	-fx-alignment: center;
+}
+
+.first-titled-pane:expanded .title .text {
+	-fx-font-size: 13px;
+}
+
+.first-titled-pane:expanded .content {
+	-fx-background-color: rgba(0, 0, 0, 0);
+	-fx-border-width: 0px;
+}
+
+.boundsInfoView {
+	-fx-padding: 5px;
+	-fx-spacing: 16px;
+	-fx-alignment: center;
+	-fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.boundsInfoView .label {
+	-fx-font-size: 12px;
+	-fx-text-fill: #191919;
+}
+
+.boundsInfoView .info-title {
+	-fx-padding: 0px 0px 4px 0px;
+	-fx-font-size: 12px;
+	-fx-text-fill: #191919;
+}
+
+.split-pane-divider {
+	-fx-background-color: rgba(0, 0, 0, 0);
+	-fx-border-width: 0px;
+	-fx-max-width: 0px;
+	-fx-min-width: 0px;
+	-fx-padding: 0px;
+}
+.split-pane-divider .horizontal-grabber{
+	-fx-background-color: rgba(0, 0, 0, 0);
+	-fx-border-width: 0px;
+	-fx-max-width: 0px;
+	-fx-min-width: 0px;
+	-fx-padding: 0px;
+}
+
+/* */
+.bounds-in-local-background-context {
+	-fx-background-color: rgb(40, 223, 153);
+	-fx-padding: 5px;
+	-fx-background-radius: 4px;
+}
+
+.bounds-in-parent-background-context {
+	-fx-background-color: rgb(255, 75, 92);
+	-fx-padding: 5px;
+	-fx-background-radius: 4px;
+}
+
+.layout-bounds-background-context {
+	-fx-background-color: rgb(253, 219, 58);
+	-fx-padding: 5px;
+	-fx-background-radius: 4px;
+}

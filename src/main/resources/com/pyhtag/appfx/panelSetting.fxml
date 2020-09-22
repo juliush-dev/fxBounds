@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="367.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pyhtag.appfx.PanelSettingController">
+   <children>
+      <AnchorPane fx:id="header" layoutX="84.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="367.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox fx:id="headerHBox" alignment="CENTER" layoutX="70.0" layoutY="1.0" prefHeight="60.0" prefWidth="260.0" spacing="10.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="1.0">
+               <children>
+                  <Label fx:id="headerTitle" text="Node Panel Setting" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Separator fx:id="separator" prefWidth="200.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="61.0" />
+      <AnchorPane fx:id="body" layoutY="61.0" prefHeight="653.0" prefWidth="367.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="62.0">
+         <children>
+            <Label fx:id="optionSection" text="Options" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+            <VBox prefHeight="200.0" prefWidth="201.0" spacing="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <CheckBox fx:id="showStroke" mnemonicParsing="false" text="Stroke" />
+                  <CheckBox fx:id="showBoundsInLocal" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Bounds In Local" />
+                  <CheckBox fx:id="showBoundsInParent" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Bounds In Parent" />
+                  <CheckBox fx:id="showLayoutBounds" layoutX="10.0" layoutY="46.0" mnemonicParsing="false" text="Layout Bounds" />
+               </children>
+            </VBox>
+            <Label fx:id="transformSection" text="Transforms" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="280.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="337.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="30.0">
+                     <children>
+                        <Label text="Rotate" />
+                        <Label layoutX="10.0" layoutY="10.0" text="TranslateX" />
+                        <Label layoutX="10.0" layoutY="56.0" text="TranslateY" />
+                        <Label layoutX="10.0" layoutY="102.0" text="ScaleX" />
+                        <Label layoutX="10.0" layoutY="148.0" text="ScaleY" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="30.0">
+                     <children>
+                        <Slider fx:id="setRotate" prefHeight="16.0" prefWidth="162.0" />
+                        <Slider fx:id="setTranslateX" layoutX="10.0" layoutY="10.0" />
+                        <Slider fx:id="setTranslateY" layoutX="10.0" layoutY="33.0" />
+                        <Slider fx:id="setScaleX" layoutX="10.0" layoutY="56.0" />
+                        <Slider fx:id="setScaleY" layoutX="10.0" layoutY="79.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="30.0">
+                     <children>
+                        <Label fx:id="rotateValue" text="value" />
+                        <Label fx:id="translateXvalue" layoutX="10.0" layoutY="10.0" text="value" />
+                        <Label fx:id="translateYvalue" layoutX="10.0" layoutY="56.0" text="value" />
+                        <Label fx:id="scaleXvalue" layoutX="10.0" layoutY="102.0" text="value" />
+                        <Label fx:id="scaleYvalue" layoutX="10.0" layoutY="148.0" text="value" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

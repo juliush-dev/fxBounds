@@ -1,0 +1,36 @@
+/* Style for bounding rectangles of shape group */
+.group-shape {
+	-fx-fill: rgba(57, 59, 68, 0.8);
+	-fx-stroke: #d789d7;
+	-fx-stroke-width: 1;
+}
+
+.bounds-in-local-stroke-context, .bounds-in-parent-stroke-context, .layout-bounds-stroke-context {
+	-fx-fill: rgba(0, 0, 0, 0);
+	-fx-stroke-width: 1px;
+}
+
+.bounds-in-local-stroke-context {
+	-fx-stroke: rgb(40, 223, 153);
+}
+
+.bounds-in-parent-stroke-context {
+	-fx-stroke: rgb(255, 75, 92);
+}
+
+.layout-bounds-stroke-context {
+	-fx-stroke: rgb(253, 219, 58);
+}
+
+/* */
+.bounds-in-local-background-context {
+	-fx-fill: rgb(40, 223, 153);
+}
+
+.bounds-in-parent-background-context {
+	-fx-fill: rgb(255, 75, 92);
+}
+
+.layout-bounds-background-context {
+	-fx-fill: rgb(253, 219, 58);
+}
